@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=3d-float" />
+<body>
+<div class="font-effect-3d-float">
+	<h1>ODE CALCULATOR</h1>
+</div>
+<div class="container">
+	<div class="program left">
+		<div class="inputs">
+			<label>Y'</label>
+	 		<input id="mainEquation" class="form-control input" type="text" value="4*x*y/2+x*x"/>
+	 	</div>
+	 	<div class="inputs">
+	 		<label>Y(0)</label>
+	 		<input id="yzero" type="text" class="form-control" value="0"/>
+	 	</div>
+	 	<div class="inputs">
+	 		<label>X(0)</label>
+	 		<input id="xzero" type="text" class="form-control" value="0"/>
+ 		</div>
+	 	<div class="inputs">
+	 		<label>X(n)</label>
+	 		<input id="xfinal" type="text" class="form-control" value="2"/>
+ 		</div>
+ 		<div class="inputs">
+	 		<label>h</label>
+	 		<input id="h" type="text"  class="form-control" value="0.25"/>
+ 		</div>
+
+ 		<button id="calculate" type="button" value="calculate">CALCULATE</button>
+
+	</div>
+
+	<div id="resultleft">
+			<canvas id="grafico" width="400" height="400"></canvas>
+  </div>
+	<div id="table">
+		<pre>
+			<code>
+				<table>
+				 <thead>
+				   <tr>
+					   <th>n</th>
+					   <th>Euler X(n) </th>
+					   <th>Euler Y(n) </th>
+			     </tr>
+				 </thead>
+				 <tbody id="tableBody">
+
+				 </tbody>
+			 	</table>
+			</code>
+		</pre>
+	</div>
+
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.0"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

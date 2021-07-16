@@ -1,0 +1,80 @@
+.container{
+	width: 1360px;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+h1{
+	text-align: center;
+	color: white;
+	font-family: fantasy;
+	font-size:50px;
+	font-weight:lighter;
+}
+select, input{
+	padding: 8px;
+}
+label{
+	padding: 2px;
+	display: block;
+}
+.inputs{
+	margin-top: 20px;
+}
+button{
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	border-radius: 15px;
+	line-height: 2.5;
+	color: #3498db;
+	margin-top: 20px;
+	width: calc(100% - 20px);
+}
+.result{
+	margin-left: 25px;
+}
+table td, table th{
+	color: white;
+	padding: 5px;
+	border: 1px solid white;
+	border-collapse: collapse;
+	padding-left:5px;
+}
+
+canvas{
+	background-color: white;
+	border-radius: 10px;
+ 	width:800px !important;
+	height:800px !important;
+	padding-right: 60px;
+
+}
+label {
+	color: white;
+	font-style: italic;
+}
+body {
+	background: rgb(0,80,159);
+  background: linear-gradient(90deg, rgba(0,80,159,1) 0%, rgba(0,130,67,1) 100%);
+}
+input {
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font: small-caption	;
+	font-weight: bold;
+	font-size: 1.8;
+	width: calc(100% - 50px);
+	color: #3498db;
+	outline: none;
+	line-height: 1.5;
+}
+#resultleft{
+	float: left;
+	margin-right:10px;
+}
