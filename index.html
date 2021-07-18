@@ -1,68 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="icon" type="image/x-icon" href="Maths Fav icon.ico" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=3d-float" />
-<body>
-<div class="font-effect-3d-float">
-	<h1>DE CALCULATOR</h1>
-</div>
-<div class="container">
-	<div class="program left">
-		<div class="inputs">
-			<label>Y'</label>
-	 		<input id="mainEquation" class="form-control input" type="text" value="4*x*y/2+x*x"/>
-	 	</div>
-	 	<div class="inputs">
-	 		<label>Y(0)</label>
-	 		<input id="yzero" type="text" class="form-control" value="0"/>
-	 	</div>
-	 	<div class="inputs">
-	 		<label>X(0)</label>
-	 		<input id="xzero" type="text" class="form-control" value="0"/>
- 		</div>
-	 	<div class="inputs">
-	 		<label>X(n)</label>
-	 		<input id="xfinal" type="text" class="form-control" value="2"/>
- 		</div>
- 		<div class="inputs">
-	 		<label>h</label>
-	 		<input id="h" type="text"  class="form-control" value="0.25"/>
- 		</div>
-
- 		<button id="calculate" type="button" value="calculate">CALCULATE</button><br/>
- 		<a href="Main.html"><button class="calc">Euler's Method</button></a>
-
-	</div>
-
-	<div id="resultleft">
-			<canvas id="grafico" width="400" height="400"></canvas>
-    </div>
-	<div id="table">
-		<pre>
-			<code>
-				<table>
-				 <thead>
-				   <tr>
-					   <th>n</th>
-					   <th>Euler X(n) </th>
-					   <th>Euler Y(n) </th>
-			     </tr>
-				 </thead>
-				 <tbody id="tableBody">
-
-				 </tbody>
-			 	</table>
-			</code>
-		</pre>
-	</div>
-
-</div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@0.7.0"></script>
-<script type="text/javascript" src="script.js"></script>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DEC</title>
+        <link rel="icon" type="image/x-icon" href="./assets/Maths Fav icon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">ACC</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/Untitled design.png" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ourwork">Our Work</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Differential
+                        <span class="text-primary">Equation</span>
+                        Calculator
+                        <span class="text-primary">(DEC)</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Group Members: Pankaj Lahoti (2K20/B5/47), Prince Mendiratta (2K20/B5/69)
+                    </div>
+                    <p class="lead mb-5">We are creating some programs related to particular concepts of Differential Equations. These programs helps in the automation of solving Differential Equation, which makes it easier for the user to understand and saves their time too.</p>
+                    <br>
+                    <div class="subheading mb-5">
+                        Prince Mendiratta (2K20/B5/69)
+                    </div>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/prince-mendiratta"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/Prince-Mendiratta"><i class="fab fa-github"></i></a>
+                    </div>
+                    <br>
+                    <div class="subheading mb-5">
+                        Pankaj Lahoti (2K20/B5/47)
+                    </div>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/pankaj-lahoti-392537173"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/Prince-Mendiratta"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="ourwork">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Our Work</h2>
+                    <h3 class="mb-5">Differential Equation Calculator</h3>
+                    <p>We have created a program which is going to help user in solving Differential Equation of the inputted Differential Equation</p>
+                    <p class="mb-0"></p>
+                    <br />
+                    <a href="html/calculator.html"><button id="redox">Differential Equation Calculator</button></a>
+                </div>
+            </section>
+            <hr class="m-0" />
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
