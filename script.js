@@ -1,13 +1,12 @@
 (function(document, window) {
 
-    // Variables Globales
-    var metodoSeleccionado = getById('de_method');
+    // Global Variables
     var finalX = getById('xfinal');
     var calculateBtn = getById('calculate');
     var impresionTabla = "";
     var myChart;
 
-    // Inicialización del Calculo
+    // Calculation Initialization
     calculate.onclick = function() {
         var y = parseFloat(getById("yzero").value);
         var x = parseFloat(getById("xzero").value);
@@ -15,12 +14,12 @@
         var func = getById("mainEquation").value;
         impresionTabla = "";
 
-        // Array con resultados
+        // Array with results
         var eulerArray = euler(func, finalX.value, x, y, h)
 
         var n = eulerArray.length;
 
-        // Rendering de Gráfico y Tabla:
+        // Graph and Table Rendering:
         render(eulerArray);
 
         for (var i = 0; i < n; i++) {
@@ -29,7 +28,7 @@
         getById("tableBody").innerHTML = impresionTabla;
     };
 
-    // Función de Euler
+    // Euler function
     function  euler(func, xfinal, xinicial, yinicial, h) {
         var values = [];
         var y = yinicial;
@@ -72,7 +71,7 @@
         return document.getElementById(id);
     }
 
-    // Función para Renderizar
+    // Render Function
     function render(pointsEuler) {
         var ctx = document.getElementById('grafico').getContext('2d');
         let data ={
