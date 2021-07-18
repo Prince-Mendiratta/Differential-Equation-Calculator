@@ -1,0 +1,21 @@
+{
+    "name": "Differential-Equation-Calculator",
+    "description": "An automated differential equation calculator",
+    "keywords": [
+      "differential equation",
+      "maths",
+      "automation",
+      "differential equation solver",
+      "math calculator"
+    ],
+    "repository": "https://github.com/Prince-Mendiratta/Differential-Equation-Calculator/",
+    "website": "#TODO",
+    "success_url": "#TODO",
+    "env": {
+      "TZ": {
+        "description": "Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+        "value": "Asia/Kolkata",
+        "required": false
+      }
+    }
+}
