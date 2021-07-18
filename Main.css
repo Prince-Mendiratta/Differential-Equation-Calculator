@@ -1,0 +1,19 @@
+body{
+	background: rgb(0,80,159);
+    background: linear-gradient(90deg, rgba(0,80,159,1) 0%, rgba(0,130,67,1) 100%);
+}
+figure{
+	text-align: center;
+}
+#info{
+	bottom: 0;
+	right: 0;
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	line-height: 2.5;
+	color: #3498db;
+	margin-top: 20px;
+	box-shadow:5px 5px 5px black;
+}

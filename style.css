@@ -12,7 +12,7 @@ h1{
 	text-align: center;
 	color: white;
 	font-family: fantasy;
-	font-size:50px;
+	font-size:60px;
 	font-weight:lighter;
 }
 select, input{
@@ -34,6 +34,7 @@ button{
 	color: #3498db;
 	margin-top: 20px;
 	width: calc(100% - 20px);
+	box-shadow:5px 5px 5px black;
 }
 .result{
 	margin-left: 25px;
@@ -60,7 +61,7 @@ label {
 }
 body {
 	background: rgb(0,80,159);
-  background: linear-gradient(90deg, rgba(0,80,159,1) 0%, rgba(0,130,67,1) 100%);
+    background: linear-gradient(90deg, rgba(0,80,159,1) 0%, rgba(0,130,67,1) 100%);
 }
 input {
 	border: none;
@@ -73,6 +74,7 @@ input {
 	color: #3498db;
 	outline: none;
 	line-height: 1.5;
+	box-shadow:5px 5px 5px black;
 }
 #resultleft{
 	float: left;
